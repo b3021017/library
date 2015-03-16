@@ -13,5 +13,11 @@ String toString(){
 }
 
     static constraints = {
+
+code()
+title()
+department()
+description()
+tutor()
     }
 }
