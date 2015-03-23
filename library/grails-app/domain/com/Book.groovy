@@ -5,8 +5,8 @@ class Book {
 String title
 String author
 String isbn
-String dateBorrowed
-String returnDate
+Date dateBorrowed
+Date returnDate
 
 String toString(){
 "$title, $author, $isbn"

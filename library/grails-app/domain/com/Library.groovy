@@ -7,7 +7,7 @@ String openingHours
 
 static hasMany =[students: Student, books: Book, librarians: Librarian]
 String toString(){
-"$location"
+"$location, $openingHours"
 }
 
     static constraints = {

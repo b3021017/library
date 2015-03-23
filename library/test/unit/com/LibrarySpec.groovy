@@ -15,6 +15,13 @@ class LibrarySpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test toString"() {
+
+when: "A Library has location and openingHours"
+def library=new Library(location: 'SHU',
+			openingHours:'7am-7pm')
+
+then: "the to String method will merge them."
+library.toString()=='SHU, 7am-7pm'
     }
 }
