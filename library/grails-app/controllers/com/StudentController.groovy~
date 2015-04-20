@@ -18,7 +18,7 @@ class StudentController {
 
     def show(Student studentInstance) {
         if(params.id && Student.exists(params.id)){
-        render Student.findBystudentId(params.id) as XML
+        render Student.findByStudentid(params.id) as XML
 	}else{
 	render Student.list() as XML
 	}

@@ -18,9 +18,9 @@ class LibraryController {
 
     def show(Library libraryInstance) {
         if(params.id && Library.exists(params.id)){
-	render Library.findBytitle(params.id) as XML
+	render Library.findById(params.id) as XML
 	}else{
-	render Books.list() as XML
+	render Book.list() as XML
 	}
     }
 
